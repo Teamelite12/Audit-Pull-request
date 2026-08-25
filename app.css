@@ -1,0 +1,106 @@
+:root {
+    --bg: #f6f8fa;
+    --fg: #24292f;
+    --muted: #57606a;
+    --border: #d0d7de;
+    --accent: #0969da;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.app {
+    max-width: 32rem;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    margin: 0 0 1.25rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.task-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.task-form input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.task-form button {
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.task-list li.done .task-text {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.task-text {
+    flex: 1;
+}
+
+.delete {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.task-count {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}

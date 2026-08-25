@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample App - Task List</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Sample App</h1>
+        <p class="subtitle">A minimal task list to exercise pull request and review workflows.</p>
+
+        <form id="task-form" class="task-form">
+            <label class="visually-hidden" for="task-input">New task</label>
+            <input id="task-input" type="text" placeholder="What needs to be done?" autocomplete="off" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <ul id="task-list" class="task-list"></ul>
+        <p id="task-count" class="task-count">0 tasks</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
